@@ -1,0 +1,10 @@
+connector,pitch_mm,pin,signal,module_direction,proteus_electrical_type,notes
+UART,1.25,1,GND,power_return,POWER,
+UART,1.25,2,UART_RX,input,INPUT,Data received by FM255
+UART,1.25,3,UART_TX,output,OUTPUT,Data transmitted by FM255
+UART,1.25,4,VCC,power_input,POWER,Confirm allowed voltage before powering
+USB,1.25,1,VCC,power_input,POWER,Confirm allowed voltage before powering
+USB,1.25,2,NC,not_connected,NC,Leave unconnected
+USB,1.25,3,DM,bidirectional,BIDIRECTIONAL,USB D-
+USB,1.25,4,DP,bidirectional,BIDIRECTIONAL,USB D+
+USB,1.25,5,GND,power_return,POWER,
