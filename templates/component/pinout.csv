@@ -1,0 +1,3 @@
+connector,pitch_mm,pin,signal,module_direction,proteus_electrical_type,notes
+J1,2.54,1,GND,power_return,POWER,Replace this sample row with the real pinout
+J1,2.54,2,IO1,bidirectional,BIDIRECTIONAL,Replace this sample row with the real pinout

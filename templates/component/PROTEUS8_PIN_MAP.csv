@@ -1,0 +1,3 @@
+DevicePin,Connector,ConnectorPin,Signal,ProteusElectricalType,Notes
+1,J1,1,GND,POWER,Replace this sample row with the real pinout
+2,J1,2,IO1,BIDIRECTIONAL,Replace this sample row with the real pinout
