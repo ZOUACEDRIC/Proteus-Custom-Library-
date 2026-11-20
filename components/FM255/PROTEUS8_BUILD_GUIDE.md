@@ -25,7 +25,7 @@ This guide targets Proteus 8. It uses Proteus's own **Make Device** workflow so 
 | Pin number | Pin name | Electrical type |
 |---:|---|---|
 | 1 | VCC | POWER |
-| 2 | NC | PASSIVE |
+| 2 | NC | NC (Not Connected) |
 | 3 | DM | BIDIRECTIONAL |
 | 4 | DP | BIDIRECTIONAL |
 | 5 | GND | POWER |
