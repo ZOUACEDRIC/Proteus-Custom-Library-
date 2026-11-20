@@ -39,4 +39,4 @@ The pin assignments are transcribed from the information supplied by the project
 
 **Important:** A schematic symbol is not a functional device simulation. No manufacturer simulation model or UART protocol specification has been supplied. This initial contribution is a documented pinout/specification, not a verified native Proteus library release.
 
-The native Proteus symbol and verified PCB footprint must be generated and checked against the installed Proteus version and physical module before being labelled release-ready.
+Proteus device pin numbers must be unique across the complete device. For the schematic device, use UART pins 1–4 and USB pins 5–9; retain the USB connector's physical pin labels 1–5 in adjacent text/documentation. See PROTEUS8_BUILD_GUIDE.md. The native Proteus symbol and verified PCB footprint must be generated and checked against the installed Proteus version and physical module before being labelled release-ready.

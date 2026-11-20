@@ -14,7 +14,7 @@ Represent the module as one rectangular device with two separately named connect
 1. UART, 4 pins: GND, UART_RX, UART_TX, VCC.
 2. USB, 5 pins: VCC, NC, DM, DP, GND.
 
-Use the pin numbers exactly as shown in `pinout.csv`. UART pins 1–4 and USB pins 1–5 are independent numbering sequences.
+Use the pin numbers exactly as shown in `pinout.csv`. The seller's connector numbering is independent (UART 1–4, USB 1–5). Proteus device pin numbers, however, must be unique across the complete device. Use Proteus pins 1–4 for UART and 5–9 for USB, with visible labels/documentation mapping USB Proteus pins 5–9 to physical connector pins 1–5.
 
 Suggested designators:
 - Module: U?
