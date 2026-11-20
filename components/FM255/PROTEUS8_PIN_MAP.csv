@@ -1,0 +1,10 @@
+DevicePin,Connector,ConnectorPin,Signal,ProteusElectricalType,Notes
+1,J1_UART,1,GND,POWER,Ground reference
+2,J1_UART,2,UART_RX,INPUT,FM255 receives host UART TX
+3,J1_UART,3,UART_TX,OUTPUT,FM255 transmits to host UART RX
+4,J1_UART,4,VCC,POWER,Voltage range not yet verified
+5,J2_USB,1,VCC,POWER,Voltage range not yet verified
+6,J2_USB,2,NC,NC,Leave unconnected
+7,J2_USB,3,DM,BIDIRECTIONAL,USB D-
+8,J2_USB,4,DP,BIDIRECTIONAL,USB D+
+9,J2_USB,5,GND,POWER,Ground reference
