@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<rect width="1100" height="700" fill="#fff"/><text x="550" y="55" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold">FM255 — Schematic Symbol Reference</text>
+<rect x="330" y="130" width="440" height="430" rx="12" fill="#f7f9fc" stroke="#172b4d" stroke-width="4"/>
+<text x="550" y="215" text-anchor="middle" font-family="Arial" font-size="38" font-weight="bold" fill="#172b4d">FM255</text><text x="550" y="255" text-anchor="middle" font-family="Arial" font-size="19" fill="#52637a">External module</text>
+<line x1="330" y1="290" x2="770" y2="290" stroke="#9aa8b8" stroke-width="2"/>
+<text x="550" y="325" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">UART — J1</text><text x="550" y="455" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">USB — J2</text>
+<g stroke="#172b4d" stroke-width="3"><path d="M140 350H330 M140 385H330 M140 420H330 M140 455H330 M770 350H960 M770 385H960 M770 420H960 M770 455H960 M770 490H960"/></g>
+<g font-family="Arial" font-size="18" fill="#111"><text x="125" y="356" text-anchor="end">1 GND</text><text x="125" y="391" text-anchor="end">2 UART_RX</text><text x="125" y="426" text-anchor="end">3 UART_TX</text><text x="125" y="461" text-anchor="end">4 VCC</text><text x="975" y="356">1 VCC</text><text x="975" y="391">2 NC</text><text x="975" y="426">3 DM</text><text x="975" y="461">4 DP</text><text x="975" y="496">5 GND</text></g>
+<g font-family="Arial" font-size="16" fill="#52637a"><text x="550" y="600" text-anchor="middle">UART and USB use separate connector pin-numbering groups.</text><text x="550" y="630" text-anchor="middle">NC remains unconnected. Reference drawing, not a native Proteus library.</text></g></svg>
