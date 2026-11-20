@@ -1,0 +1,16 @@
+# Proteus / ISIS working files
+*.pdsprj
+*.pdsprj.*
+*.DSN
+*.DBK
+*.workspace
+*.~lock*
+
+# Proteus backups and autosave
+*.bak
+*.b~k
+Backup Of *
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

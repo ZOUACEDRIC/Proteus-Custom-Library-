@@ -2,6 +2,42 @@
 
 Reusable Proteus component definitions and documentation.
 
+## Components
+
+| Component | Type | Device pins | Schematic symbol | Native `.LIB` |
+|---|---|---|---|---|
+| [FM255](components/FM255/) | UART + USB module | 9 | documented, build guide ready | not built yet |
+
+"Native `.LIB`" means a device compiled by Proteus itself with **Library → Make Device**.
+Until that file exists, a component is documentation and drawing, not a device you can
+pick from the Proteus library selector.
+
+## Repository layout
+
+```
+components/<NAME>/     one folder per part: pinout.csv, PROTEUS8_PIN_MAP.csv, spec, guides
+templates/component/   skeleton copied by scripts/new_component.py
+scripts/               validator and scaffolding tools
+```
+
+## Adding or changing a component
+
+```bash
+# new part from the template
+python scripts/new_component.py ESP32C3 "ESP32-C3 module, 22 pins"
+
+# check every component folder
+python scripts/validate_component.py
+
+# check one
+python scripts/validate_component.py FM255
+```
+
+The validator is the source of truth for consistency: it rejects duplicate or gapped
+device pin numbers, pinout rows that do not match the Proteus map, electrical types that
+disagree between the CSV files and the Markdown tables, and documents that reference
+files which do not exist. CI runs it on every push.
+
 ## First component: FM255 module
 
 This first contribution records the FM255 connector pinout supplied by the project owner and defines the requirements for its reusable Proteus symbol.
@@ -29,8 +65,16 @@ This first contribution records the FM255 connector pinout supplied by the proje
 
 ### Files
 
-- `components/FM255/pinout.csv` — machine-readable pin table.
+Authoritative data first — when two files disagree, the CSVs win and the other file is a bug.
+
+- `components/FM255/pinout.csv` — physical pinout (connector, pin, signal, type).
+- `components/FM255/PROTEUS8_PIN_MAP.csv` — connector pin → unique Proteus device pin.
 - `components/FM255/COMPONENT_SPEC.md` — symbol, connector and footprint requirements.
+- `components/FM255/PROTEUS8_BUILD_GUIDE.md` — step-by-step Make Device walkthrough.
+- `components/FM255/PROTEUS8_QUICK_START.md` — condensed build specification.
+- `components/FM255/PROTEUS8_IMPLEMENTATION_STATUS.md` — what is prepared and what is not.
+- `components/FM255/FM255_SCHEMATIC_REFERENCE.svg` — drawing to copy into ISIS.
+- `components/FM255/SCHEMATIC_SYMBOL_GUIDE.md`, `MECHANICAL_REFERENCE.md` — symbol and mechanical notes.
 - `components/FM255/SIMULATION.md` — simulation scope and limitations.
 
 ### Current status
