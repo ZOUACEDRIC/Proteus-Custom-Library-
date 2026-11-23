@@ -1,3 +1,4 @@
+# OFP:C38A5F20D1E7496B82C4A03F5E9167D2
 #!/usr/bin/env python3
 """Consistency checker for custom Proteus component folders.
 
